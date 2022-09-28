@@ -1,0 +1,19 @@
+<div class="registrar container">
+    <form class="row g-3" [formGroup]="formulario" (ngSubmit)="save()">
+        <div class="col-md-12">
+            <label for="validationDefault02" class="form-label">IMAGEN</label>
+            <input type="text" class="form-control" formControlName="imagenes" placeholder="Ingrese la URL de la Imagen"
+                id="imagenes" required>
+            <div class="alert alert-danger" *ngIf="formulario.invalid && (formulario.dirty || formulario.touched)">
+                <div class="container-error-message">
+                    *
+                </div>
+            </div>
+        </div> 
+      
+        <div class="col-12">
+            <button class="btn btn-outline-primary" type="submit" [disabled]="!formulario.valid">Enviar</button>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,44 @@
+.ins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.ti {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media(max-width:600px) {
+  
+    .titulo {
+        margin-top: 25px;
+    }
+    .ti {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .p{
+        font-size: 12px;
+    }
+
+    .img {
+        height: 50px;
+        width: 100%;
+    }
+}
